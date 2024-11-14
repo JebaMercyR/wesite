@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>justify_content</title>
+    <style>
+        .container{
+            border: 5px solid black;
+            padding:20px;
+            margin-top: 80px;
+        }
+        body{
+            background-color: white;
+            padding: 50px;
+            color: black;
+
+        }
+        h3{
+            font-size: 50px;
+        }
+        .box{
+            padding: 50px;
+            margin: 10px;
+            font-size: 50px;
+            font-weight: bold;
+            background-color: red;
+            color: white;
+        }
+        .container{
+            height: 900px;
+            width: 600px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+        .box:nth-child(1)
+        {
+            align-self: stretch;
+        }
+        .box:nth-child(2)
+        {
+            align-self: flex-end;
+        }
+        .box:nth-child(3){
+            align-self: center;
+        }
+        .box:nth-child(4){
+            align-self: stretch;
+        }
+        .box:nth-child(5){
+            align-self: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+    </div>
+</body>
+</html>

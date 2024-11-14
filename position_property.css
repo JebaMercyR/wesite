@@ -1,0 +1,16 @@
+.box1{
+    /* position: relative;
+    left: 10px; */
+    /* position: absolute; */
+    /* display: none; */
+    /* position: absolute; */
+    /* top: 0px; */
+    /* bottom: 0px; */
+    position: absolute;
+    bottom: 0px;
+
+ } 
+.container{
+     position: relative;
+     
+}

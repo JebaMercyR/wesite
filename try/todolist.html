@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <button class="button">youtube</button>
+    <input placeholder="search"
+    class="js-name-input">
+        <button onclick="addTodo();" >Add</button>
+        <div class="js-todo-list"></div>
+    <script>
+        const todolist=['Dinner','watch movie'];
+        rendertodolist();
+        function rendertodolist() {
+            let todolistHTML="";
+            for(let i=0;i<todolist.length;i++){
+                const todo=todolist[i];
+                const html=`<p>${todo}</p>`;
+                todolistHTML+=html;
+            }
+            console.log(todolistHTML);
+            document.querySelector('.js-todo-list');
+            innerHTML=todolistHTML;
+        }
+
+            function addTodo() {
+                const inputElement = document.querySelector('.js-name-input');
+                const name = inputElement.value;
+                todolist.push(name);
+                console.log(todolist);
+                inputElement.value="";
+                rendertodolist();
+            }
+    </script>
+    </body>
+</html>

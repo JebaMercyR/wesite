@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //concadination
+        let f="Jeba";
+        let l="Mercy";
+        let n=f+" "+l
+        console.log(n);//one way
+        c=f.concat(' ',l)
+        console.log(c);
+        //append
+        let a="Jeba";
+        a+="Mercy";
+        console.log("Append: "+a);
+        //escaping
+        let e='she can\'t run'
+        console.log(e)
+        //length
+        let le="Mercy";
+        let len=le.length;
+        console.log(len)
+        //lowercase and uppercase
+        let lo="MERCY";
+        let low=lo.toLowerCase()
+        console.log(low)
+        let up="mercy";
+        let upp=up.toUpperCase()
+        console.log(upp)
+        //indexOf
+        let i="mercy"
+        let ind=i.indexOf('e')
+        console.log(ind)
+        //last indexOf
+        let li="mercy"
+        let lin=li.lastIndexOf('c')
+        console.log(lin)
+        //charAt
+        let ch="mercy"
+        let cha=ch.charAt(2)
+        console.log(cha)
+        //charcodeAt==>ascii value
+        let char="mercy"
+        let charc=char.charCodeAt(2)
+        console.log(charc)
+        //substring==>to cut string
+        let s="mercy"
+        let su=s.substr(0,3)
+        console.log(su)
+        //slice
+        let sl="123456789"
+        let sli=sl.slice(2,5)
+        console.log(sli)
+        //split
+        let sp="my name is jeba mercy"
+        let spl=sp.split(" ")
+        console.log(spl)
+        //replace
+        let re="my name is jeba mercy"
+        console.log(re)
+        let rep=re.replace('mercy','merish')
+        console.log(rep)
+        //fromcharcode
+        console.log(String.fromCharCode(77))
+        //includes-true or false
+        const inc=['cat','dog','rat']
+        console.log(inc.includes('cat'))
+        console.log(inc.includes('bat'))
+        //trim-remove spaces
+        let t="     mercy    "
+        console.log(t)
+        let tr=t.trim();
+        console.log(tr)
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

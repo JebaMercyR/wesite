@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class a{
+            show(a){
+                document.write("My name is Mercy"+"<br>"+a+"<br>");
+            }
+        }
+        class b extends a{
+            show(){
+                super.show(50);
+                document.write("Jeba Mercy");
+            }
+        }
+        var x=new b();
+        x.show();
+    </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <title>Calculator</title>
+    <body>
+        <div id="calculator">
+            <input id="display" readonly>
+            <div id="key">
+                <button onclick="buttonDisply('7')">7</button>
+                <button onclick="buttonDisply('8')">8</button>
+                <button onclick="buttonDisply('9')">9</button>
+                <button onclick="buttonDisply('+')" class="operator-but">+</button>
+                <button onclick="buttonDisply('4')">4</button>
+                <button onclick="buttonDisply('5')">5</button>
+                <button onclick="buttonDisply('6')">6</button>
+                <button onclick="buttonDisply('-')" class="operator-but">-</button>
+                <button onclick="buttonDisply('1')">1</button>
+                <button onclick="buttonDisply('2')">2</button>
+                <button onclick="buttonDisply('3')">3</button>
+                <button onclick="buttonDisply('*')" class="operator-but">*</button>
+                <button onclick="clearDisplay()" class="operator-but">c</button>
+                <button onclick="buttonDisply('0')">0</button>
+                <button onclick="calculate()">=</button>
+                <button onclick="buttonDisply('/')" class="operator-but">/</button>
+            </div>
+        </div>
+        <style>
+            body{
+                margin:0;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            #calculator {
+                font-family: Arial,sans-serif;
+                background-color: hsl(0, 0%, 15%);
+                border-radius: 15px;
+                max-width: 500px;
+                overflow: hidden;
+            }
+            #display{
+                width: 100%;
+                padding: 10px;
+                font-size: 5rem;
+                text-align: left;
+                border: none;
+                background-color: hsl(0, 0%, 20%);
+                color:white;
+
+            }
+            #key {
+                display:grid;
+                grid-template-columns: repeat(4,1fr);
+                gap:10px;
+                padding:25px;
+            }
+            button {
+
+                background-color: rgb(66, 64, 64);
+                color:white;
+                font-family: arial;
+                font-size: 25px;
+                border-radius:50px;
+                border:none;
+                width: 50px;
+                height:50px;
+                cursor:pointer;
+                margin-left:10px;
+
+            }
+            button:hover{
+                background-color: hsl(0, 0%, 40%);
+            }
+            button:active{
+                background-color:hsl(0, 0%, 50%) ;
+            }
+            .operator-but{
+                background-color:hsl(35, 100%, 55%) ;
+            }
+            .operator-but:hover{
+                background-color:hsl(35, 100%, 55%) ;
+            }
+            .operator-but:active{
+                background-color:hsl(35, 100%, 65%) ;
+            }
+
+        </style>
+        <script>
+            let display=document.getElementById("display");
+        function buttonDisply(input){
+            display.value += input;
+
+        }
+        function clearDisplay(){
+            display.value="";
+        }
+        function calculate(){
+            try{
+                display.value=eval(display.value);
+
+            }
+            catch(error){
+                display.value="error";
+
+            }
+        }
+        </script>
+    </body>
+</html>

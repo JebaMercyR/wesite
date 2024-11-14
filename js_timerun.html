@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="time">show time</h1>
+
+    <!-- current time:<span id="txt"></span>
+    <script>
+        window.onload=function(){
+            getTime();
+        }
+        function getTime(){
+            var day=new Date();
+            var h=day.getHours();
+            var m=day.getMinutes();
+            var s=day.getSeconds();
+            //add zero in front of number<10
+            m=checkTime(m);
+            s=checkTime(s);
+            document.getElementById("txt").innerHTML=+h+":"+m+":"+s;
+            setTimeout(function()
+        {
+            getTime()
+        },1000);
+        }
+        function checkTime(i)
+        {
+            if(i<10)
+        {
+            i="0"+i;
+
+        }
+        return i;
+        }
+        </script> -->
+        <script>
+        function updateTime(){
+            const now=new Date();
+            const timestring=now.toLocaleTimeString();
+            document.getElementById('time').textContent=timestring;
+        }
+        setInterval(updateTime,1000);
+        updateTime();
+    </script>
+</body>
+</html>

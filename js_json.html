@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let json1="Mercy";
+        let json2=5
+        let json3=true
+        let json4=[1,2,3,4,5]
+        let json5= {
+                     "company":"wipro",
+                     "salary":30000
+                   }
+        let json6=`[ 
+                    {"company":"TCS",
+                     "salary":25000
+                   },
+                   {
+                     "company":"CTS",
+                     "salary":40000
+                   },
+                   {
+                     "company":"INFOTECH",
+                     "salary":35000
+                   }
+                ]`
+                //using backtic `all values are convert string fromat
+                //api data comes string fromat only
+
+                 console.log(json6)
+                 let answer=JSON.parse(json6)
+                // //parse means separate the data
+
+
+                 console.log(answer[1])
+                console.log(answer[1].salary)
+                //array convert string
+                //stringfy using send api data formate
+                console.log(JSON.stringify(answer))
+
+        
+    </script>
+</body>
+</html>
